@@ -1,0 +1,126 @@
+[ 2019-05-30T09:21:35+08:00 ] ::1 /study/tpStudy/index.php/Admin/Site/modelAction
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001869s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0346s ]
+SQL: SELECT * FROM `city` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `city` SET `area`='300002' WHERE `id` = 4 [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: HTTP_CLIENT_IP D:\phpStudy\PHPTutorial\WWW\study\tpStudy\Application\Admin\Controller\SiteController.class.php 第 46 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000966s ]
+
+[ 2019-05-30T09:34:17+08:00 ] ::1 /study/tpStudy/index.php/Admin/Site/modelAction
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0110s ]
+ERR: Think\Model:filed方法不存在！
+
+[ 2019-05-30T09:34:36+08:00 ] ::1 /study/tpStudy/index.php/Admin/Site/modelAction
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0145s ]
+SQL: SELECT `id`,`name`,`provincial` FROM `city`  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001724s ]
+
+[ 2019-05-30T10:04:42+08:00 ] ::1 /study/tpStudy/index.php/Admin/Site/modelAction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001226s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0150s ]
+SQL: SELECT `id`,`name`,`provincial` FROM `city`  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002153s ]
+
+[ 2019-05-30T10:07:11+08:00 ] ::1 /study/tpStudy/index.php/Admin/Site/modelAction/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`name`,`provincial` FROM `city`  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002045s ]
+
+[ 2019-05-30T10:10:40+08:00 ] ::1 /study/tpStudy/index.php/Admin/Site/modelAction1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+ERR: 1146:Table 'study.member' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `member`
+ERR: 1146:Table 'study.member' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `member`
+
+[ 2019-05-30T10:10:57+08:00 ] ::1 /study/tpStudy/index.php/Admin/Site/modelAction1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+ERR: 1146:Table 'study.other_member' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `other_member`
+ERR: 1146:Table 'study.other_member' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `other_member`
+
+[ 2019-05-30T10:11:09+08:00 ] ::1 /study/tpStudy/index.php/Admin/Site/modelAction1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+ERR: 1146:Table 'study.member' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `Member`
+ERR: 1146:Table 'study.member' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `Member`
+
+[ 2019-05-30T10:29:59+08:00 ] ::1 /study/tpStudy/index.php/Admin/Site/modelAction
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0128s ]
+SQL: SELECT `id`,`name`,`area`,`provincial` FROM `city`  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015237s ]
+
+[ 2019-05-30T10:56:45+08:00 ] ::1 /study/tpStudy/index.php/Admin/Site/modelAction
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `city` [ RunTime:0.0147s ]
+SQL: SELECT `id`,`name`,`area`,`provincial` FROM `city`  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002161s ]
+

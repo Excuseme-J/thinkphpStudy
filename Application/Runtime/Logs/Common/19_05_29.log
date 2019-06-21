@@ -1,0 +1,36 @@
+[ 2019-05-29T09:16:08+08:00 ] ::1 /study/tpStudy/Site/hello.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+ERR: 无法加载模块:Site
+
+[ 2019-05-29T09:25:23+08:00 ] ::1 /study/tpStudy/index.php/View/Site/hello.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008381s ]
+ERR: 无法加载模块:View
+
+[ 2019-05-29T09:30:53+08:00 ] ::1 /study/tpStudy/index.php/view/Site/hello.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+ERR: 无法加载模块:View
+
+[ 2019-05-29T10:04:17+08:00 ] ::1 /study/tpStudy/index.php/Site
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001022s ]
+ERR: 无法加载模块:Site
+
+[ 2019-05-29T10:04:25+08:00 ] ::1 /study/tpStudy/index.php/Site/hello
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+ERR: 无法加载模块:Site
+
+[ 2019-05-29T10:14:31+08:00 ] ::1 /study/tpStudy/index.php/Site/g/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+ERR: 无法加载模块:Site
+
