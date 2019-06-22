@@ -8,7 +8,7 @@ class SiteController extends Controller
         //分配数据
         $this -> assign('name',$_GET['name']);
         //展示模板
-        $this -> display();;;
+        $this -> display();
     }
     public function g()
     {
