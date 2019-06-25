@@ -213,6 +213,10 @@ class Student
     {
         return $this->name;
     }
+    public function sayHello()
+    {
+        echo "111";
+    }
 }
 class Puli extends Student
 {
@@ -226,10 +230,20 @@ class Puli1 extends Student
     public function testing2()
     {
         echo "测试2";
+        parent::sayHello();
+    }
+    public function __construct($name)
+    {
+        parent::__construct($name);
+    }
+    public function sayHello()
+    {
+        echo "222";
     }
 }
 $s1 = new Puli();
 $s1->setInfo("小明");
+echo $s1->sayHello();
 echo $s1->getInfo();
 $s2 = new Puli1();
 $s2->setInfo("小黑");
@@ -237,7 +251,60 @@ echo $s2->getInfo();
 echo $s1->getInfo();
 echo $s2->getInfo();
 
+$s3 = new Puli1('aa');
 
+echo '<br>'.$s3->getInfo();
+
+echo $s3->sayHello();
+class Monkey{
+    public $name;
+    public function __construct($name)
+    {
+        $this->name = $name;
+    }
+    public function climbing()
+    {
+        echo "我学会了爬树";
+    }
+}
+interface iBirdable{
+    public function flying();
+}
+interface iFisable{
+    public function swimming();
+}
+class Wukong extends Monkey implements iBirdable,iFisable{
+    public function flying()
+    {
+        echo '<br>'.$this->name.'飞翔';
+    }
+    public function swimming()
+    {
+        echo '<br>'.$this->name.'游泳';
+    }
+}
+$wukong = new Wukong("孙悟空");
+echo $wukong->swimming();
+echo $wukong->flying();
+echo $wukong->climbing();
+echo __DIR__;
+class Cat1{
+    public $name;
+    protected $age;
+    private $sex;
+    public function __construct($name,$age,$sex)
+    {
+        $this->name = $name;
+        $this->age = $age;
+        $this->sex = $age;
+    }
+}
+$cat1 = new Cat1("机器猫","100","男");
+// file_put_contents(__DIR__.'\\cat1.log',serialize($cat1));
+// echo '保存成功';
+$cat1_log = file_get_contents(__DIR__.'\\cat1.log');
+$cat_obj = unserialize($cat1_log);
+var_dump($cat_obj);
 ?>
 <!DOCTYPE html>
 <html lang="en">
