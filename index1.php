@@ -91,10 +91,153 @@ class Car
             echo "没有这个键";
         }
     }
+    public function __isset($key)
+    {
+        if(property_exists($this,$key))
+        {
+            return true;
+        }else{
+            return false;
+        }
+    }
+    public function __unset($key)
+    {
+        if(property_exists($this,$key))
+        {
+            unset($this->$key);
+        }else{
+            echo "属性不存在，无法unset";
+        }
+    }
+    public function __toString()
+    {
+        return '<br>名字：' . $this->name . '车标：' . $this->carName;
+    }
 }
 $car = new Car("a","劳斯莱斯");
-$car->carName = "劳斯莱斯";
-echo $car->carName;
+// $car->carName = "劳斯莱斯";
+// echo $car->carName;
+
+if(isset($car->carName)){
+    echo '<br> name属性存在'; 
+}
+echo $car;
+class Cat{
+    private $name;
+    private $age;
+    private $sex;
+    public function __construct($val1,$val2,$val3)
+    {
+        $this->name = $val1;
+        $this->age = $val2;
+        $this->sex = $val3;
+    }
+    public function __toString()
+    {
+        return '<br>名字：' . $this->name . '年龄：' . $this->age . "性别：" . $this->sex;
+    }
+}
+$cat = new Cat('大白','5','公');
+echo $cat;
+class Monk{
+
+    public $name;
+    private $hobby;
+
+    public function __construct($val1,$val2)
+    {
+        $this->name = $val1;
+        $this->hobby = $val2;
+    }
+    public function showInfo(){
+        echo '名字：'. $this->name;
+        foreach ($this->hobby as $key => $value) {
+            echo '<br>爱好有:' . $value;
+        }
+    }
+    private function getSun($num1,$num2)
+    {
+        return $num1 + $num2;
+    }
+    public function __call($methodName,$parameters)
+    {  
+
+        if(method_exists($this,$methodName)){
+            return $this->$methodName($parameters[0],$parameters[1]);
+        }else{
+            echo "没有这个函数";
+        }
+    }
+}
+$monk = new Monk('小明',array('抽烟','喝酒'));
+$monk->showInfo();
+echo $monk->getSun(1,2);
+
+class Child{
+    public $name;
+    public static $num;
+    public function __construct($val1)
+    {
+        //$this->name = $val1;
+    }
+    public function jsonGame($val)
+    {
+        echo $val . "加入游戏";
+        self::$num++;
+    }
+    public function getNum()
+    {
+        echo "共有：".self::$num;
+    }
+}
+$child = new Child();
+$child->jsonGame("小白");
+$child->getNum();
+$child->jsonGame("小小黑");
+$child->getNum();
+
+class Student
+{
+    public $name;
+    public $age;
+    public function __construct($val1,$val2)
+    {
+        $this->name = $val1;
+        $this->age = $val2;
+    }
+    public function setInfo($val1)
+    {
+        $this->name = $val1;
+    }
+    public function getInfo()
+    {
+        return $this->name;
+    }
+}
+class Puli extends Student
+{
+    public function testing()
+    {
+        echo "测试1";
+    }
+}
+class Puli1 extends Student
+{
+    public function testing2()
+    {
+        echo "测试2";
+    }
+}
+$s1 = new Puli();
+$s1->setInfo("小明");
+echo $s1->getInfo();
+$s2 = new Puli1();
+$s2->setInfo("小黑");
+echo $s2->getInfo();
+echo $s1->getInfo();
+echo $s2->getInfo();
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
