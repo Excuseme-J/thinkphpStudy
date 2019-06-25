@@ -304,7 +304,7 @@ $cat1 = new Cat1("机器猫","100","男");
 // echo '保存成功';
 $cat1_log = file_get_contents(__DIR__.'\\cat1.log');
 $cat_obj = unserialize($cat1_log);
-var_dump($cat_obj);;
+var_dump($cat_obj);
 ?>
 <!DOCTYPE html>
 <html lang="en">
